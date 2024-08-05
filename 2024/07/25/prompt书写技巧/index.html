@@ -131,18 +131,16 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/img/prompt书写技巧.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Prompt优化技巧</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <hr>
-<h2 id="title-LLMdate-2024-8-02-21-43-48-文章发表时间tags-AI产品经理-技术categories-Learningthumbnail-img-AI产品经理技术指南-jpg-略缩图pic-url-img-AI产品经理技术指南-jpglayout-Learning"><a href="#title-LLMdate-2024-8-02-21-43-48-文章发表时间tags-AI产品经理-技术categories-Learningthumbnail-img-AI产品经理技术指南-jpg-略缩图pic-url-img-AI产品经理技术指南-jpglayout-Learning" class="headerlink" title="title: LLMdate: 2024&#x2F;8&#x2F;02 21:43:48  # 文章发表时间tags:- AI产品经理- 技术categories: Learningthumbnail: &#x2F;img&#x2F;AI产品经理技术指南.jpg # 略缩图pic_url: &#x2F;img&#x2F;AI产品经理技术指南.jpglayout: Learning"></a>title: LLM<br>date: 2024&#x2F;8&#x2F;02 21:43:48  # 文章发表时间<br>tags:<br>- AI产品经理<br>- 技术<br>categories: Learning<br>thumbnail: &#x2F;img&#x2F;AI产品经理技术指南.jpg # 略缩图<br>pic_url: &#x2F;img&#x2F;AI产品经理技术指南.jpg<br>layout: Learning</h2><iframe
-src="http://172.20.162.207:8081/ui/chat/3db052de12742a98"
-style="width: 100%; height: 100%;"
-frameborder="0"
-allow="microphone">
-</iframe>
+                <h1 id="Prompt优化的五个技巧"><a href="#Prompt优化的五个技巧" class="headerlink" title="Prompt优化的五个技巧"></a>Prompt优化的五个技巧</h1><h2 id="第一，角色-任务-指令"><a href="#第一，角色-任务-指令" class="headerlink" title="第一，角色-任务-指令"></a>第一，角色-任务-指令</h2><p>这个是构成prompt的三个关键元素。角色是希望模型在生成文本时候扮演的角色。比如你是一个客服机器人。任务是希望模型完成的具体任务。比如希望你可以回答消费者提出的关于商品的问题。指令是你希望大模型遵守的规则。比如希望机器人严格继续规定资料去回答问题，不要过度推理。</p>
+<h2 id="第二，语言清晰和准确"><a href="#第二，语言清晰和准确" class="headerlink" title="第二，语言清晰和准确"></a>第二，语言清晰和准确</h2><p>确保prompt简洁明了，直接说清楚信息或者任务的核心。避免模糊的语言。提供足够的上下文信息，比如提供问题的背景资料。</p>
+<h2 id="第三，精简指令"><a href="#第三，精简指令" class="headerlink" title="第三，精简指令"></a>第三，精简指令</h2><p>不要引入复杂和太多的指令。尤其是通过增加指令来解决线上的case，会使得指令极其复杂，对后续模型的优化和迭代很不利。另外，按照openai的经验，如果通过引入数据sft，模型具备了指令的能力，也可以精简指令。</p>
+<h2 id="第四，引入COT思维链"><a href="#第四，引入COT思维链" class="headerlink" title="第四，引入COT思维链"></a>第四，引入COT思维链</h2><p>对于复杂的任务，引入思维链会有非常明显和直接的效果。不好的地方是会增加模型的推理时间。</p>
+<h2 id="第五，引入Markdown区分信息"><a href="#第五，引入Markdown区分信息" class="headerlink" title="第五，引入Markdown区分信息"></a>第五，引入Markdown区分信息</h2><p>引入分隔符，会有非常显著的作用。可能的原因是大模型训练过程中，遇到很多的html语料，对这些符号比较容易区分。</p>
 
             </div>
 
@@ -205,8 +203,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://example.com/2024/08/02/LLM/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://example.com/2024/08/02/LLM/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://example.com/2024/07/25/prompt%E4%B9%A6%E5%86%99%E6%8A%80%E5%B7%A7/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2024/07/25/prompt%E4%B9%A6%E5%86%99%E6%8A%80%E5%B7%A7/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
