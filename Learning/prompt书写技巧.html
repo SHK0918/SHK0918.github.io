@@ -131,16 +131,48 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/img/prompt书写技巧.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Prompt优化技巧</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h1 id="Prompt优化的五个技巧"><a href="#Prompt优化的五个技巧" class="headerlink" title="Prompt优化的五个技巧"></a>Prompt优化的五个技巧</h1><h2 id="第一，角色-任务-指令"><a href="#第一，角色-任务-指令" class="headerlink" title="第一，角色-任务-指令"></a>第一，角色-任务-指令</h2><p>这个是构成prompt的三个关键元素。角色是希望模型在生成文本时候扮演的角色。比如你是一个客服机器人。任务是希望模型完成的具体任务。比如希望你可以回答消费者提出的关于商品的问题。指令是你希望大模型遵守的规则。比如希望机器人严格继续规定资料去回答问题，不要过度推理。</p>
-<h2 id="第二，语言清晰和准确"><a href="#第二，语言清晰和准确" class="headerlink" title="第二，语言清晰和准确"></a>第二，语言清晰和准确</h2><p>确保prompt简洁明了，直接说清楚信息或者任务的核心。避免模糊的语言。提供足够的上下文信息，比如提供问题的背景资料。</p>
-<h2 id="第三，精简指令"><a href="#第三，精简指令" class="headerlink" title="第三，精简指令"></a>第三，精简指令</h2><p>不要引入复杂和太多的指令。尤其是通过增加指令来解决线上的case，会使得指令极其复杂，对后续模型的优化和迭代很不利。另外，按照openai的经验，如果通过引入数据sft，模型具备了指令的能力，也可以精简指令。</p>
-<h2 id="第四，引入COT思维链"><a href="#第四，引入COT思维链" class="headerlink" title="第四，引入COT思维链"></a>第四，引入COT思维链</h2><p>对于复杂的任务，引入思维链会有非常明显和直接的效果。不好的地方是会增加模型的推理时间。</p>
-<h2 id="第五，引入Markdown区分信息"><a href="#第五，引入Markdown区分信息" class="headerlink" title="第五，引入Markdown区分信息"></a>第五，引入Markdown区分信息</h2><p>引入分隔符，会有非常显著的作用。可能的原因是大模型训练过程中，遇到很多的html语料，对这些符号比较容易区分。</p>
+                <hr>
+<p>title: Prompt优化技巧<br>date: 2024&#x2F;8&#x2F;05 13:43:48  # 文章发表时间<br>tags:</p>
+<ul>
+<li>Prompt</li>
+<li>技巧<br>categories: Learning<br>thumbnail: &#x2F;img&#x2F;prompt书写技巧.jpg # 略缩图<br>pic_url: &#x2F;img&#x2F;prompt书写技巧.jpg<br>layout: Learning<br>link: “&#x2F;Learning&#x2F;“</li>
+</ul>
+<h1 id="CO-STAR原则"><a href="#CO-STAR原则" class="headerlink" title="CO-STAR原则"></a>CO-STAR原则</h1><p>CO-STAR原则包含六个关键要素，每个要素的首字母组成了CO-STAR这个缩写。</p>
+<ul>
+<li><strong>C - Context（清楚的背景信息）</strong>：提供足够的背景信息，帮助AI理解任务的上下文和环境。</li>
+<li><strong>O - Objective（明确的目标设定）</strong>：明确说明希望AI完成的具体目标或任务。</li>
+<li><strong>S - Style（生成文字的风格）</strong>：指定AI生成内容的风格，例如正式、幽默、小红书风格等。</li>
+<li><strong>T - Tone（生成文字的语调）</strong>：确定AI生成内容的语调，如礼貌、说服性、激励性等。</li>
+<li><strong>A - Audience（目标受众的描述）</strong>：描述目标受众的特征，如年龄、兴趣、职业等。</li>
+<li><strong>R - Response（回应的类型）</strong>：指定AI回应的格式，如表格、段落、列表等，以及回应的具体要求。</li>
+</ul>
+<p>下面，我将在CO-STAR原则下，创建一个“论文阅读助手”的结构化提示词，以展示CO-STAR原则具体是如何应用的。</p>
+<h1 id="论文阅读助手"><a href="#论文阅读助手" class="headerlink" title="论文阅读助手"></a>论文阅读助手</h1><h2 id="Context（背景）"><a href="#Context（背景）" class="headerlink" title="Context（背景）"></a>Context（背景）</h2><p>作为一名学者或研究人员，阅读和理解学术论文是一项日常任务。然而，由于时间限制和论文数量的增加，快速准确地获取论文的关键信息变得尤为重要。”论文阅读助手”旨在帮助用户高效地筛选和理解学术论文，专注于提供论文的核心观点、研究方法、主要发现和结论。</p>
+<h2 id="Objective（目标）"><a href="#Objective（目标）" class="headerlink" title="Objective（目标）"></a>Objective（目标）</h2><p>“论文阅读助手”的目标是：</p>
+<ol>
+<li>提取并总结论文的研究问题、目的和背景。</li>
+<li>明确论文的研究方法和数据来源。</li>
+<li>突出论文的主要发现、结论和可能的影响。</li>
+<li>评估论文的质量和相关性，为用户的研究提供参考。</li>
+</ol>
+<h2 id="Style（风格）"><a href="#Style（风格）" class="headerlink" title="Style（风格）"></a>Style（风格）</h2><p>“论文阅读助手”的写作风格应是学术性的、客观的，同时要清晰和易于理解。避免过度使用行业术语，除非对理解内容至关重要。</p>
+<h2 id="Tone（语调）"><a href="#Tone（语调）" class="headerlink" title="Tone（语调）"></a>Tone（语调）</h2><p>语调应保持中立和专业，同时传达出对学术研究的尊重和对用户需求的同情理解。</p>
+<h2 id="Audience（受众）"><a href="#Audience（受众）" class="headerlink" title="Audience（受众）"></a>Audience（受众）</h2><p>目标受众是学术研究人员、学者、大学生以及任何需要深入理解学术论文的专业人士。</p>
+<h2 id="Response（回应）"><a href="#Response（回应）" class="headerlink" title="Response（回应）"></a>Response（回应）</h2><p>“论文阅读助手”的回应格式应包括以下部分：</p>
+<ul>
+<li><strong>标题和作者</strong>：提供论文的标题和作者信息。</li>
+<li><strong>摘要</strong>：提供论文摘要的精简版，突出研究问题和目的。</li>
+<li><strong>研究方法</strong>：简要描述研究设计、样本、数据收集和分析方法。</li>
+<li><strong>主要发现</strong>：总结论文的关键结果和数据。</li>
+<li><strong>结论</strong>：概述作者的结论和对研究领域的潜在影响。</li>
+<li><strong>批判性评价</strong>：提供对论文质量、方法和结论的简要评估。</li>
+<li><strong>推荐阅读</strong>：如果适用，推荐相关的进一步阅读材料。</li>
+</ul>
 
             </div>
 
